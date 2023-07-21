@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>landing page</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	
+</head>
+
+<body>
+	
+<!-- header---------------------------------------------------------------------------------------------->
+<div class="header">
+	<a href="index.html"><img src="images/header logo.png" alt=""/></a>
+	<div class="header-icon">
+		<a href="#"><img src="images/Fb.png" width="29" height="29" alt=""/></a>
+		<a href="#"><img src="images/twitter.png" width="29" height="29" alt=""/></a>
+		<a href="#"><img src="images/in.png" width="29" height="29" alt=""/></a>
+		<a href="#"><img src="images/ig.png" width="29" height="29" alt=""/></a>
+		<a href="#"><img src="images/yt.png" width="29" height="29" alt=""/></a>
+	</div>
+</div>
+
+	
+	
+<!-- navbar---------------------------------------------------------------------------------------------->
+<div class="navbar">
+	<ul class="navbar-list">
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="aboutus.html">ABOUT US</a></li>
+		<li><a href="anxiety.html">ABOUT ANXIETY</a></li>
+		<li><a href="blog.html">BLOGS</a></li>
+		<li><a href="contact.html">GET HELP</a></li>	
+	</ul>
+</div>	
+	
+	
+	
+<!-- heropage---------------------------------------------------------------------------------------------->
+<div class="hero-section">
+	<h1>Navigating the Journey of Anxiety</h1>
+	<div class="subhead">
+		<p>Explore resources, strategies, and support <br>
+			to help you manage anxiety and regain control of your life.
+		</p>
+	</div>
+	<a href="contact.html"><div class="green-button">Get Support</div></a>
+</div>
+
+	
+	
+<!-- aboutus---------------------------------------------------------------------------------------------->
+<div  class="about-us-background">
+	<div class="about-us">
+		<div class="about-us-left">
+			<h1>About Us</h1>
+			<p>Welcome to <i>Anxiety Wellness</i>, a dedicated platform created to provide support, resources, and information for those dealing with anxiety. We are a team of passionate individuals who understand the challenges of anxiety and are committed to helping others overcome it.<br><br>
+			Our team consists of mental health experts, researchers, and individuals who have personally experienced anxiety. Through our collective expertise, we offer valuable insights, practical strategies, and resources to help you better understand anxiety and develop effective coping mechanisms.<br><br>
+			Join us as we break the stigma surrounding anxiety, foster resilience, and promote positive mental health. We're here to support you on your journey to a calmer and happier life.	
+			</p>
+		  <a href="aboutus.html"><div class="yellow-button">Read More</div></a>
+		</div>
+		<img src="images/about us.png" width="300" height="457" alt=""/> 
+	</div>
+</div>
+	
+		
+	
+	
+<!-- understanding anxiety---------------------------------------------------------------------------------------------->	
+<div class="anxiety-accordian">
+	<h1>Understanding Anxiety</h1>
+	
+	
+	<div class="panel-group">
+		<button class="accordion">What is anxiety?</button>
+		<div class="panel">
+	  	<p>Anxiety is a complex emotional and physiological response to stress and perceived threats. It involves feelings of fear, unease, and worry, accompanied by physical and cognitive symptoms. <br><br>
+		Different types of anxiety disorders exist, all of which can significantly impact a person's daily life. Causes of anxiety are varied and can include genetics, brain chemistry imbalances, trauma, and environmental factors. </p>
+		</div>
+
+		<button class="accordion">Common Signs of Anxiety</button>
+		<div class="panel">
+			<ul>
+				<li>Rapid Heartbeat</li>
+				<li>Restlessness</li>
+				<li>Sleep Difficulties</li>
+				<li>Fatigue</li>
+				<li>Difficulty Concentrating</li>
+				<li>Muscle Tension</li>	
+			</ul>
+		</div>
+
+		<button class="accordion">Types of Anxiety Disorder</button>
+		<div class="panel">
+			<ul>
+				<li>Generalized Anxiety Disorder (GAD)</li>
+				<li>Panic Disorder</li>
+				<li>Social Anxiety Disorder</li>
+				<li>Specific Phobias</li>
+				<li>Obsessive-Compulsive Disorder (OCD)</li>
+				<li>Post-Traumatic Stress Disorder (PTSD)</li>
+			</ul>
+		</div>
+
+		<button class="accordion">How is anxiety treated?</button>
+		<div class="panel">
+			<ul>
+				<li>Self-treatment</li>
+				<li>Counseling and therapy</li>
+				<li>Medications</li>
+			</ul>
+		</div>
+	</div>
+	<a href="anxiety.html"><div class="green-button">Learn More</div></a>	
+</div>
+
+<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
+		/* Toggle between adding and removing the "active" class,
+		to highlight the button that controls the panel */
+		this.classList.toggle("active");
+
+		/* Toggle between hiding and showing the active panel */
+		var panel = this.nextElementSibling;
+		if (panel.style.display === "block") {
+		  panel.style.display = "none";
+		} else {
+		  panel.style.display = "block";
+		}
+	  });
+	}
+</script>
+	
+	
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+	
+<!-- blogs---------------------------------------------------------------------------------------------->	
+<div class="blog">
+  	<h1>Latest Blogs &amp Resources</h1>
+	<div class="blog-horizontal">
+		<img src="images/home blog top.png" alt=""/>
+		<div class="blog-horizontal-right" >
+			<h3>Your Mental Health Matters. <br> 10 Tips for Setting Healthy Boundaries</h3>
+			<p>How do you like to practice self-care? A relaxing hot bath? Curling up with a good book? Watching your favorite movies or going for a walk? These are all fantastic, but have you ever considered or identified setting boundaries as an act of self-care? Setting boundaries is one of the best types of self-care. </p>
+			<a href="https://nyctherapeuticwellness.com/your-mental-health-matters-10-tips-for-setting-healthy-boundaries/"><div class="underline-button">READ MORE</div></a>
+		</div>
+		
+	</div>
+	
+	<div class="three-column">
+		<div class="column">
+			<img src="images/popular left.png" alt=""/>
+			<h2>What Are Performance Anxiety and Social Anxiety Disorders?</h2>
+			<p>In a world fueled by constant evaluation and social interaction, it’s not uncommon for individuals to experience performance anxiety or social anxiety disorder.</p>
+			<a href="https://anxieties.com/blog/what-are-performance-anxiety-and-social-anxiety-disorders/"><div class="underline-button">READ MORE</div></a>
+		</div>
+		
+		<div class="column">
+			<img src="images/popular center.png" alt=""/>
+			<h2>How You Can Use Self-Talk to Step Forward</h2>
+			<p>Translating complex ideas into simple messages-to-self Photo by Isaac Wendland on Unsplash We tend to talk to ourselves throughout the day. In fact, 96% of</p>
+			<a href="https://anxieties.com/blog/how-you-can-use-self-talk-to-step-forward/"><div class="underline-button">READ MORE</div></a>
+		</div>
+		
+		<div class="column">
+			<img src="images/popular right.png" alt=""/>
+			<h2>Surrender Your Security, Certainty, and Comfort</h2>
+			<p>How we relentlessly pursue control–and continually disappoint ourselves Photo by Markus Spiske on Unsplash My granddaughter is five years old </p>
+			<a href="https://anxieties.com/blog/surrender-your-security-certainty-and-comfort/"><div class="underline-button">READ MORE</div></a>
+		</div>
+	</div>
+
+	<a href="blog.html"><div class="green-button">Read All Blogs</div></a>
+</div>
+
+	
+	
+<!-- subscribe---------------------------------------------------------------------------------------------->
+<div class="subscribe-section">
+	<h1>Subscribe to our Newsletter</h1>
+	<p>Unlock a World of Anxiety Wellness: Join Our Newsletter<br>for Exclusive Tips, Insights, and Support!</p>
+	<div class="textbox">
+		<div id="email"><p>Email Address</p></div>
+		<div id="subscribe"><a href="#">Subscribe</a></div>
+	</div>
+</div>
+	
+	
+<!-- footer---------------------------------------------------------------------------------------------->	
+<div class="footer">
+	<div class="footer-section-top">
+		<div class="footer-left">
+			<a href="index.html"><img id="footer-logo" src="images/footer logo.png" width="235" height="235" alt=""/></a> 
+			<div class="social-icon"> 
+				<a href=""><img src="images/footer fb.png" width="39" height="39" alt=""/></a>
+				<a href=""><img src="images/footer twitter.png" width="39" height="39" alt=""/></a>
+				<a href=""><img src="images/footer linked.png" width="39" height="39" alt=""/></a>
+				<a href=""><img src="images/footer ig.png" width="39" height="39" alt=""/></a>
+				<a href=""><img src="images/footer yt.png" width="39" height="39" alt=""/></a>
+			</div>
+		</div>
+		
+		<div class="footer-middle">
+			<h3>Navigate</h3>
+			<a href="index.html">Home</a>
+			<a href="aboutus.html">About Us</a>
+			<a href="anxiety.html">About Anxiety</a>
+			<a href="blog.html">Blogs</a>
+			<a href="contact.html">Get Help</a>
+		</div>
+
+		<div class="footer-right">
+			<div class="footer-right-row">
+				<h3>Join Our Newsletter</h3>
+				<p>Unlock a World of Anxiety Wellness: Join Our Newsletter for Exclusive Tips, Insights, and Support!</p>
+				<div class="textbox">
+				<div id="email"><p>Email Address</p></div>
+				<div id="subscribe"><a href="#">Subscribe</a></div>
+				</div>
+			</div>
+
+			<div class="footer-right-row">
+				<h3>Helplines</h3>
+				<p>Are you or someone you know currently experiencing a crisis or in need of immediate support? Access Our Crisis Helpline and Professional Therapy Services.</p>
+				<a href="contact.html"><div class="yellow-button">Get Support</div></a>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+			<p>@2023, Anxiety Wellness, All Rights Reserved | <a href="#">Privacy Policy</a> | <a href="#">Terms &amp Conditions</a></p>
+	</div>
+</div>
+	
+
+
+</body>
+</html>
